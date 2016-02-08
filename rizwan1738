@@ -1,1 +1,143 @@
-Hi
+<html>
+<body>
+
+
+<script type="text/javascript">
+function show_alert()
+{
+alert("Hi!!! You're on Rizwans HTML site :)!");
+}
+</script>
+</head>
+<body>
+
+
+<input type="button" onclick="show_alert()" value="CLICK HERE!!! :)" />
+
+
+
+
+
+
+<!--<body>-->
+<script language="JavaScript">
+function nMouse(evnt){
+Ypos = evnt.pageY;
+Xpos = evnt.pageX;
+}
+function iMouse() {
+Ypos = event.y+document.body.scrollTop;
+Xpos = event.x+document.body.scrollLeft;
+}
+function Comet() {
+var yBase = (document.layers)?window.innerHeight/4:window.document.body.clientHeight/4;
+var xBase = (document.layers)?window.innerWidth/4:window.document.body.clientWidth/4;
+for (i = 0; i < 14; i++){
+var randCol = Math.round(Math.random()*8);
+var layer = (document.layers)?document.layers['n'+i]:me[i].style;
+layer.top =Ypos + yBase*Math.cos((currStep+i*4)/12)*Math.cos(0.7+currStep/200);
+layer.left = Xpos + xBase*Math.sin((currStep+i*3)/10)*Math.sin(8.2+currStep/400);
+if (ns) layer.bgColor = Clrs[randCol];
+else
+layer.background = Clrs[randCol];
+}
+currStep += step;
+setTimeout("Comet()",10);
+}
+ns = (document.layers)?1:0;
+Clrs = new Array('7AFFFF','0000ff','7AFFFF','0000ff','7AFFFF','0000ff','7AFFFF','0000ff','7AFFFF');
+yBase = 0;
+xBase = 0;
+step = 3;
+currStep = 0;
+Ypos = 0;
+Xpos = 0;
+if (ns){
+for (i = 0; i < 14; i++)
+document.write('<LAYER NAME="n'+i+'" LEFT=0 TOP=0 CLIP="0,0,'+i/4+','+i/4+'"></LAYER>');
+window.captureEvents(Event.MOUSEMOVE);  
+window.onMouseMove = nMouse;
+}
+else{
+document.write('<div style="position:absolute;top:0;left:0"><div style="position:relative">');
+for (i=0; i < 14; i++)
+{document.write('<div id="me" style="position:absolute;top:0;left:0;width:'+i/4+';height:'+i/4+';font-size:'+i/4+'"></div>');}
+document.write('</div></div>');
+document.onmousemove = iMouse;
+}
+window.onload = Comet;
+</script>
+<!--</body>-->
+
+
+
+
+<head>
+<style type="text/css">
+body {background-image:url('http://media02.hongkiat.com/black_wallpapers/black-pattern.jpg');}
+</style>
+</head>
+
+
+<center><h1 style="font-family:coalition;"><font color='#FFFFFF'>H</font><font color='#F8FCFF'>e</font><font color='#F2FAFF'>l</font><font color='#ECF8FF'>l</font><font color='#E6F6FF'>o</font><font color='#E0F4FF'>
+</font><font color='#DAF2FF'>W</font><font color='#D4F0FF'>e</font><font color='#CEEEFF'>l</font><font color='#C8EBFF'>c</font><font color='#C2E9FF'>o</font><font color='#BCE7FF'>m</font><font color='#B6E5FF'>e</font><font color='#B0E3FF'> </font><font color='#AAE1FF'>t</font><font color='#A3DFFF'>o</font><font color='#9DDDFF'> </font><font color='#97DAFF'>R</font><font color='#91D8FF'>i</font><font color='#8BD6FF'>z</font><font color='#85D4FF'>w</font><font color='#7FD2FF'>a</font><font color='#79D0FF'>n</font><font color='#73CEFF'>'</font><font color='#6DCCFF'>s</font><font color='#67CAFF'> </font><font color='#61C7FF'>F</font><font color='#5BC5FF'>a</font><font color='#55C3FF'>v</font><font color='#4EC1FF'>o</font><font color='#48BFFF'>u</font><font color='#42BDFF'>r</font><font color='#3CBBFF'>i</font><font color='#36B9FF'>t</font><font color='#30B6FF'>e</font><font color='#2AB4FF'> </font><font color='#24B2FF'>t</font><font color='#1EB0FF'>h</font><font color='#18AEFF'>i</font><font color='#12ACFF'>n</font><font color='#0CAAFF'>g</font><font color='#06A8FF'>s</font></center>
+</h1>
+
+
+
+
+<center><iframe width="560" height="315" src="http://www.youtube.com/embed/YWt4wmZ_EMI?rel=0" frameborder="0" allowfullscreen></iframe></center>
+
+
+
+
+<center><iframe width="560" height="315" src="http://www.youtube.com/embed/u0fk6syQ7iY?rel=0" frameborder="0" allowfullscreen></iframe></center>
+
+
+
+
+<center><iframe width="560" height="315" src="http://www.youtube.com/embed/eXHxqiu7cBs?rel=0" frameborder="0" allowfullscreen></iframe></center>
+
+
+
+
+<center><iframe width="560" height="315" src="http://www.youtube.com/embed/0QSz5uvQQvE?rel=0" frameborder="0" allowfullscreen></iframe></center>
+
+
+<center><p>
+<a href="http://www.chaoticwars.co.uk">
+<img src="http://oi39.tinypic.com/1rrd00.jpg"width="470" height="60" />
+</a></p></center>
+
+
+<center><p>
+<a href="http://www.chaoticwarsextreme.com">
+<img src="http://oi41.tinypic.com/4tr60z.jpg"width="470" height="60" />
+</a></p></center>
+
+
+<center><p>
+<a href="http://www.dragonfable.com/">
+<img src="http://forums2.battleon.com/f/image/df-banner.jpg"width="413" height="91" />
+</a></p></center>
+
+
+<center><p>
+<a href="http://www.mechquest.com/">
+<img src="http://forums2.battleon.com/f/image/mq-banner.jpg"width="413" height="91" />
+</a></p></center>
+
+
+<div align="center"><object width="785" height="540"><param name="movie" value="http://www.physicsgames.net/swf/ozee.swf"></param><embed src="http://www.physicsgames.net/swf/ozee.swf" type="application/x-shockwave-flash" width="785" height="540"></embed></object><br></div>
+
+
+<div align="center"><object width="450" height="560"><param name="movie" value="http://static.rebubbled.com/games/game_621/freeway-fury.swf?"></param><param name="base" value="http://static.rebubbled.com/games/game_621//"><param name="allowscriptaccess" value="sameDomain"></param><param name="allowFullScreen" value="false"></param><embed src="http://static.rebubbled.com/games/game_621//freeway-fury.swf?" base="http://static.rebubbled.com/games/game_621/" type="application/x-shockwave-flash" allowscriptaccess="sameDomain" allowfullscreen="false" width="450" height="560"></embed></object></div>
+
+
+
+
+<center><img src="http://www.thesmilies.com/smileyletters/image.php?s=Rizwan&ext=.gif" width="192" height="32" /></center>
+
+
+</body>
+</html>
