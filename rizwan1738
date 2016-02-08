@@ -1,143 +1,235 @@
-<html>
-<body>
-
-
-<script type="text/javascript">
-function show_alert()
-{
-alert("Hi!!! You're on Rizwans HTML site :)!");
-}
-</script>
-</head>
-<body>
-
-
-<input type="button" onclick="show_alert()" value="CLICK HERE!!! :)" />
-
-
-
-
-
-
-<!--<body>-->
-<script language="JavaScript">
-function nMouse(evnt){
-Ypos = evnt.pageY;
-Xpos = evnt.pageX;
-}
-function iMouse() {
-Ypos = event.y+document.body.scrollTop;
-Xpos = event.x+document.body.scrollLeft;
-}
-function Comet() {
-var yBase = (document.layers)?window.innerHeight/4:window.document.body.clientHeight/4;
-var xBase = (document.layers)?window.innerWidth/4:window.document.body.clientWidth/4;
-for (i = 0; i < 14; i++){
-var randCol = Math.round(Math.random()*8);
-var layer = (document.layers)?document.layers['n'+i]:me[i].style;
-layer.top =Ypos + yBase*Math.cos((currStep+i*4)/12)*Math.cos(0.7+currStep/200);
-layer.left = Xpos + xBase*Math.sin((currStep+i*3)/10)*Math.sin(8.2+currStep/400);
-if (ns) layer.bgColor = Clrs[randCol];
-else
-layer.background = Clrs[randCol];
-}
-currStep += step;
-setTimeout("Comet()",10);
-}
-ns = (document.layers)?1:0;
-Clrs = new Array('7AFFFF','0000ff','7AFFFF','0000ff','7AFFFF','0000ff','7AFFFF','0000ff','7AFFFF');
-yBase = 0;
-xBase = 0;
-step = 3;
-currStep = 0;
-Ypos = 0;
-Xpos = 0;
-if (ns){
-for (i = 0; i < 14; i++)
-document.write('<LAYER NAME="n'+i+'" LEFT=0 TOP=0 CLIP="0,0,'+i/4+','+i/4+'"></LAYER>');
-window.captureEvents(Event.MOUSEMOVE);  
-window.onMouseMove = nMouse;
-}
-else{
-document.write('<div style="position:absolute;top:0;left:0"><div style="position:relative">');
-for (i=0; i < 14; i++)
-{document.write('<div id="me" style="position:absolute;top:0;left:0;width:'+i/4+';height:'+i/4+';font-size:'+i/4+'"></div>');}
-document.write('</div></div>');
-document.onmousemove = iMouse;
-}
-window.onload = Comet;
-</script>
-<!--</body>-->
-
-
-
-
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta property="og:image" content="http://www.chaoticwars.net/images_ext/streets.jpg"/>
+<link href="default.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
-body {background-image:url('http://media02.hongkiat.com/black_wallpapers/black-pattern.jpg');}
+<!--
+        @import url("layout.css");
+-->
 </style>
+<title>ChaoticWars</title>
+
+
 </head>
-
-
-<center><h1 style="font-family:coalition;"><font color='#FFFFFF'>H</font><font color='#F8FCFF'>e</font><font color='#F2FAFF'>l</font><font color='#ECF8FF'>l</font><font color='#E6F6FF'>o</font><font color='#E0F4FF'>
-</font><font color='#DAF2FF'>W</font><font color='#D4F0FF'>e</font><font color='#CEEEFF'>l</font><font color='#C8EBFF'>c</font><font color='#C2E9FF'>o</font><font color='#BCE7FF'>m</font><font color='#B6E5FF'>e</font><font color='#B0E3FF'> </font><font color='#AAE1FF'>t</font><font color='#A3DFFF'>o</font><font color='#9DDDFF'> </font><font color='#97DAFF'>R</font><font color='#91D8FF'>i</font><font color='#8BD6FF'>z</font><font color='#85D4FF'>w</font><font color='#7FD2FF'>a</font><font color='#79D0FF'>n</font><font color='#73CEFF'>'</font><font color='#6DCCFF'>s</font><font color='#67CAFF'> </font><font color='#61C7FF'>F</font><font color='#5BC5FF'>a</font><font color='#55C3FF'>v</font><font color='#4EC1FF'>o</font><font color='#48BFFF'>u</font><font color='#42BDFF'>r</font><font color='#3CBBFF'>i</font><font color='#36B9FF'>t</font><font color='#30B6FF'>e</font><font color='#2AB4FF'> </font><font color='#24B2FF'>t</font><font color='#1EB0FF'>h</font><font color='#18AEFF'>i</font><font color='#12ACFF'>n</font><font color='#0CAAFF'>g</font><font color='#06A8FF'>s</font></center>
-</h1>
-
-
-
-
-<center><iframe width="560" height="315" src="http://www.youtube.com/embed/YWt4wmZ_EMI?rel=0" frameborder="0" allowfullscreen></iframe></center>
-
-
-
-
-<center><iframe width="560" height="315" src="http://www.youtube.com/embed/u0fk6syQ7iY?rel=0" frameborder="0" allowfullscreen></iframe></center>
-
-
-
-
-<center><iframe width="560" height="315" src="http://www.youtube.com/embed/eXHxqiu7cBs?rel=0" frameborder="0" allowfullscreen></iframe></center>
-
-
-
-
-<center><iframe width="560" height="315" src="http://www.youtube.com/embed/0QSz5uvQQvE?rel=0" frameborder="0" allowfullscreen></iframe></center>
-
-
-<center><p>
-<a href="http://www.chaoticwars.co.uk">
-<img src="http://oi39.tinypic.com/1rrd00.jpg"width="470" height="60" />
-</a></p></center>
-
-
-<center><p>
-<a href="http://www.chaoticwarsextreme.com">
-<img src="http://oi41.tinypic.com/4tr60z.jpg"width="470" height="60" />
-</a></p></center>
-
-
-<center><p>
-<a href="http://www.dragonfable.com/">
-<img src="http://forums2.battleon.com/f/image/df-banner.jpg"width="413" height="91" />
-</a></p></center>
-
-
-<center><p>
-<a href="http://www.mechquest.com/">
-<img src="http://forums2.battleon.com/f/image/mq-banner.jpg"width="413" height="91" />
-</a></p></center>
-
-
-<div align="center"><object width="785" height="540"><param name="movie" value="http://www.physicsgames.net/swf/ozee.swf"></param><embed src="http://www.physicsgames.net/swf/ozee.swf" type="application/x-shockwave-flash" width="785" height="540"></embed></object><br></div>
-
-
-<div align="center"><object width="450" height="560"><param name="movie" value="http://static.rebubbled.com/games/game_621/freeway-fury.swf?"></param><param name="base" value="http://static.rebubbled.com/games/game_621//"><param name="allowscriptaccess" value="sameDomain"></param><param name="allowFullScreen" value="false"></param><embed src="http://static.rebubbled.com/games/game_621//freeway-fury.swf?" base="http://static.rebubbled.com/games/game_621/" type="application/x-shockwave-flash" allowscriptaccess="sameDomain" allowfullscreen="false" width="450" height="560"></embed></object></div>
-
-
-
-
-<center><img src="http://www.thesmilies.com/smileyletters/image.php?s=Rizwan&ext=.gif" width="192" height="32" /></center>
-
-
-</body>
-</html>
+<body>
+<div id="wrapper" class="bg7">
+     <div class="bg8">
+          <div id="wrapperA"></div>
+          <div id="content">
+               <div id="header">
+                    <div id="logo">
+                    <h1>ChaoticWars</h1>
+		    <h2>Extreme International Gaming Online</h2>
+                    </div>
+                    <div id="splash">
+                    <h3>Text Based RPG Gaming Site - Text based gaming at its best</h3>
+                    </div>
+                    </div>
+                    <div id="mainmenu" class="bg3">
+                    <ul>
+                    <li><a href="events.php" id="mainmenu1" accesskey="1" title="" class="link1 vline">Events (0)</a></li>
+                    <li><a href="mailbox.php" id="mainmenu2" accesskey="2" title="" class="link1 vline">Mailbox (0)</a></li>
+                    <li><a href="achievements.php" id="mainmenu3" accesskey="3" title="" class="link1 vline">Achievements (0)</a></li>
+                    <li><a href="polling.php" id="mainmenu4" accesskey="4" title="" class="link1 vline">Polls (0)</a></li>
+                    <li><a href="chat.php" id="mainmenu5" accesskey="5" title="" class="link1 vline">Chat (0)</a></li>
+                    <li><a href="announcements.php" id="mainmenu6" accesskey="6" title="" class="link1 vline"><font color = yellow>Announcements (3)</font></a></li>
+                    </ul>
+                    <p><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.chaoticwars.net%2Flogin.php&amp;width=80&amp;height=46&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;send=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:45px;" allowTransparency="true"></iframe></p>
+                    </div>
+                    <!-- Begin Main Content -->
+                    <div class="two-col">
+                    <div class="colA">
+                    <div id="box1">
+                    <h2 class="text2 title1">Player Status</h2>
+                    <ul class="ul1">
+                    <li><span class="bbit-li-info">Name: <a href='viewuser.php?u=16'>Deadpool</a> [16] <img src='images/Male.gif'width='8' height='8'align=center alt='Gender - Male' />  </font></span></li>
+                    <li><span class="bbit-li-info">Money: $386,647,400</span></li>
+                    <li><span class="bbit-li-info">Level: 100</span></li>
+                    <li><span class="bbit-li-info">Crystals: 30,290,838</a></span></li>
+                    <li><span class="bbit-li-info">Gold Bars: 35</a></span></li>
+                    <li><span class="bbit-li-info">Steps: 1,166,474</a></span></li>
+                    <li><span class="bbit-li-info">Banks: 1,604,311 [<a href='bank.php' title='City Bank: $1,604,311'><small>B</small></a>][<a href='cyberbank.php' title='Cyber Bank: $0'><small>C</small></a>]</span></li>
+                    </ul>
+                    <div class="boxfoot">
+							<!-- # -->
+		    </div>
+                    <h2 class="text2 title1">Progress Bars</h2>
+                    <ul>
+                    <p class="bbit-li-progressbars bbit-li-progressbars-top"><b>Energy:</b> 100% <a href='refill.php?spend=refille'><small>[R]</small></a><br /><img src="images/bar_left.gif" alt="" title="" width="5" height="10" /><img src="images/greenbar.gif" alt="" title="" width="100" height="10" /><img src="images/greybar.gif" alt="" title="" width="0" height="10" /><img src="images/bar_right.gif" alt="" title="" width="5" height="10" /></p>
+                    <p class="bbit-li-progressbars"><b>Will:</b> 100% <a href='refill.php?spend=refillw'><small>[R]</small></a><br /><img src="images/bar_left.gif" alt="" title="" width="5" height="10" /><img src="images/bluebar.gif" alt="" title="" width="100" height="10" /><img src="images/greybar.gif" alt="" title="" width="0" height="10" /><img src="images/bar_right.gif" alt="" title="" width="5" height="10" /></p>
+                    <p class="bbit-li-progressbars"><b>Brave:</b> 203/203 <a href='refill.php?spend=refillb'><small>[R]</small></a><br /><img src="images/bar_left.gif" alt="" title="" width="5" height="10" /><img src="images/yellowbar.gif" alt="" title="" width="100" height="10" /><img src="images/greybar.gif" alt="" title="" width="0" height="10" /><img src="images/bar_right.gif" alt="" title="" width="5" height="10" /></p>
+                    <p class="bbit-li-progressbars"><b>EXP:</b>  1.02%<br /><img src="images/bar_left.gif" alt="" title="" width="5" height="10" /><img src="images/purplebar.gif" alt="" title="" width="1.02" height="10" /><img src="images/greybar.gif" alt="" title="" width="98.98" height="10" /><img src="images/bar_right.gif" alt="" title="" width="5" height="10" /></p>
+                    <p class="bbit-li-progressbars"><b>Power:</b>  38/38 <a href='refill.php?spend=refillp'><small>[R]</small></a><br /><img src="images/bar_left.gif" alt="" title="" width="5" height="10" /><img src="images/redbar.gif" alt="" title="" width="100" height="10" /><img src="images/greybar.gif" alt="" title="" width="0" height="10" /><img src="images/bar_right.gif" alt="" title="" width="5" height="10" /></p>
+                    <p class="bbit-li-progressbars"><b>Health:</b> 100% <a href='refill.php?spend=refillh'><small>[R]</small></a><br /><img src="images/bar_left.gif" alt="" title="" width="5" height="10" /><img src="images/turbar.gif" alt="" title="" width="100" height="10" /><img src="images/greybar.gif" alt="" title="" width="0" height="10" /><img src="images/bar_right.gif" alt="" title="" width="5" height="10" /></p>
+          </ul>           <!-- Start Main menu -->
+           <h2 class="text2 title1">Main Menu</h2>
+           <ul class="ul1">           <li><a href="index.php" class="link1">Home</a></li>
+           <li><a href="inventory.php" class="link1">Inventory</a></li>           <li><a href="events.php" class="link1">Events (0)</a></li>           <li><a href="mailbox.php" class="link1">Mailbox (0)</a></li>           <li><a href="achievements.php" class="link1">Achievements (0)</a></li>           <li><a href="auction.php" class="link1"><font color = lime><b>Auctions (4)</b></font></a></li>           <li><a href="explore.php" class="link1">Explore</a></li>           <li><a href='gym.php' class='link1'>Gym</a></li>           <li><a href="polling.php" class="link1">Polls (0)</a></li>           <li><a href="criminal.php" class="link1">Crimes</a></li>
+           <li><a href="job.php" class="link1">Your Job</a></li>
+           <li><a href="education.php" class="link1">Local School</a></li>
+           <li><a href="hospital.php" class="link1">Hospital (12)</a></li>
+           <li><a href="jail.php" class="link1">Jail (0)</a></li>           <li><a href="chat.php" class="link1">Chat (0)</a></li>           <li><a href="forums.php" class="link1">Forums</a></li>           <li><a href="announcements.php" class="link1"><font color = green><b>Announcements (3)</b></font></a></li>           <li><a href="newspaper.php" class="link1">Newspaper</a></li>           <li><a href="search.php" class="link1">Search</a></li>
+           <li><a href="advsearch.php" class="link1">Advanced Search</a></li>
+           <li><a href="arcadedos.php" class="link1">Arcade</a></li>
+           <li><a href="stafflist.php" class="link1">Staff List</a></li>           <li><a href="usersonline.php" class="link1">Users Online (10)</a></li>
+           <div class="boxfoot">
+							<!-- # -->
+	   </div>           </ul>
+           <h2 class="text2 title1">Shortcuts <a href="shortcuts.php" class="link1"><small>[Manage]</small></a></h2>
+           <ul class="ul1">           <li><span class="bbit-li-info">No Shortcuts</span></li>          </ul>
+          <div class="boxfoot">
+							<!-- # -->
+	  </div>          <h2 class="text2 title1">Reports</h2>
+          <ul class="ul1">
+          <li><a href="preport.php" class="link1">Player Report</a></li>
+          <li><a href="breport.php" class="link1">Bug Report</a></li>
+          </ul>
+          <div class="boxfoot">
+							<!-- # -->
+	  </div>          <h2 class="text2 title1">Account</h2>
+          <ul class="ul1">
+          <li><a href="preferences.php" class="link1">Preferences</a></li>
+          <li><a href="helptutorial.php" class="link1">Help Tutorial</a></li>
+          <li><a href="gamerules.php" class="link1">Game Rules</a></li>
+          <li><a href="viewuser.php?u=16" class="link1">My Profile</a></li>
+          <li><a href="logout.php" class="link1">Logout</a></li>
+          <li><span class="bbit-li-info">Time: 15:57:30 GMT</span></li>
+          </ul>
+          <div class="boxfoot">
+						<!-- # -->
+	  </div>
+          </div>
+          </div>
+          <!-- End Main menu -->        <div class="colB">
+        <div id="box5">
+        <div class="notice-donate"><a href='voting.php'><b>Vote</b></a> | <a href='donator.php'><b>Donate to ChaoticWars now for game benefits!</b></a></div><br /><h3><u>Users Online</u></h3><table border="0" width="99%" cellpading="0" cellspacing="0">
+  <tr>
+    <td width="35%" valign="top">
+      <h4>Time Selector</h4>
+      <a href="usersonline.php?time=15">(15 Mins)</a>
+      <a href="usersonline.php?time=30">(30 Mins)</a>
+      <a href="usersonline.php?time=45">(45 Mins)</a>
+      <a href="usersonline.php?time=60">(60 Mins)</a>
+      <a href="usersonline.php?time=1440">(24 Hrs)</a><br /><br />
+      <h3>Statistics</h3>
+      Users online in the last 15 Mins: 10<br />
+      Users online in the last 30 Mins: 15<br />
+      Users online in the last 45 Mins: 20<br />
+      Users online in the last 60 Mins: 23<br />
+      Users online in the last 24 Hours: 103<br /><br />
+      <h3>Records</h3>
+      Record online in 15 mins: 48<br />
+      Record online in 60 mins: 57<br />
+      Record online in 24 hrs: 118<br /><br />
+      <h3>User Legend</h3>
+      Staff = <img src='images/staff.gif' width='12' height='12'><br/>
+      NPC = <img src='images/computer.png' width='12' height='12'><br/>    
+      Admins = <font color="gold">Gold</font><br />
+      Secretaries = <font color="dodgerblue">Blue</font><br />
+      Moderators = <font color="green">Green</font><br />
+      Assistants = <font color="cyan">Cyan</font><br />
+      Members = <font color="silver">Silver</font><br />
+      Donators = <font color="red">Red</font> <img src='donator.gif 'width='12' height='12'><br/>
+    </td>
+    <td width=65% valign="top">
+      <table border="0" width="100%" cellpading="0" cellspacing="1" class="table">
+        <tr>
+          <th width="10%">
+            Gang
+          </th>
+          <th width="44%">
+            Users Online
+          </th>
+          <th width="10%">
+            Last
+          </th>
+          <th width="10%">
+            Online
+          </th>
+          <th width="10%">
+            Rate
+          </th>
+          <th width="8%">
+            Mail
+          </th>
+          <th width="8%">
+            Action
+          </th>
+        </tr>
+<tr><td>
+                         <a href='gangs.php?action=view&ID=134'><small>[View]</small></a>
+                       </td><td align = left>
+                   1. <a href='gangs.php?action=view&ID=134'><font color = cyan>PPI</font></a> <a href='viewuser.php?u=9'><font color='dodgerblue'><font color=dodgerblue>The Pun</font>&nbsp;</font></a><img src='donator.gif 'width='12' height='12' alt='Donator: 44006 Days Left' title='Donator: 44006 Days Left' /> <img src='images/gym.png 'width='10' height='10' alt='Auto Trainer Active' title='Auto Trainer Active' />  <img src='images/staff.gif' width='12' height='12' alt='Staff' title='Staff' /></td><td>0 secs
+                   </td>
+                   <td>47 mins</td><td><a href=rating.php?change=up&ID=9><img src=images/positive.gif height='10' width='10'></a> | <a href=rating.php?change=down&ID=9><img src=images/negative.gif height='10' width='10'></a></td>
+                 <td><small>[<a href='mailbox.php?action=compose&ID=9'>Mail</a>]</small></td><td><small>N/A</small></td><tr><td>
+                         <small>No Gang</small>
+                       </td><td align = left>
+                   2. <a href='gangs.php?action=view&ID='><font color = cyan></font></a> <a href='viewuser.php?u=16'><font color='silver'>Deadpool</font></a>   </td><td>0 secs
+                   </td>
+                   <td>3 mins</td><td><a href=rating.php?change=up&ID=16><img src=images/positive.gif height='10' width='10'></a> | <a href=rating.php?change=down&ID=16><img src=images/negative.gif height='10' width='10'></a></td>
+                 <td><small>[<a href='mailbox.php?action=compose&ID=16'>Mail</a>]</small></td><td><small>[<a href='attack.php?ID=16'>Attack</a>]</td><tr><td>
+                         <a href='gangs.php?action=view&ID=137'><small>[View]</small></a>
+                       </td><td align = left>
+                   3. <a href='gangs.php?action=view&ID=137'><font color = cyan></font></a> <a href='viewuser.php?u=1592'><font color='red'><font color=red>hellboy</font>&nbsp;</font></a><img src='donator.gif 'width='12' height='12' alt='Donator: 700 Days Left' title='Donator: 700 Days Left' />   </td><td>1 secs
+                   </td>
+                   <td>53 mins</td><td><a href=rating.php?change=up&ID=1592><img src=images/positive.gif height='10' width='10'></a> | <a href=rating.php?change=down&ID=1592><img src=images/negative.gif height='10' width='10'></a></td>
+                 <td><small>[<a href='mailbox.php?action=compose&ID=1592'>Mail</a>]</small></td><td><small>[<a href='attack.php?ID=1592'>Attack</a>]</td><tr><td>
+                         <small>No Gang</small>
+                       </td><td align = left>
+                   4. <a href='gangs.php?action=view&ID='><font color = cyan></font></a> <a href='viewuser.php?u=203'><font color='red'><font color=red>SUPERVILLIAN</font>&nbsp;</font></a><img src='donator.gif 'width='12' height='12' alt='Donator: 1819 Days Left' title='Donator: 1819 Days Left' />   </td><td>4 secs
+                   </td>
+                   <td>5 hours</td><td><a href=rating.php?change=up&ID=203><img src=images/positive.gif height='10' width='10'></a> | <a href=rating.php?change=down&ID=203><img src=images/negative.gif height='10' width='10'></a></td>
+                 <td><small>[<a href='mailbox.php?action=compose&ID=203'>Mail</a>]</small></td><td><small>[<a href='attack.php?ID=203'>Attack</a>]</td><tr><td>
+                         <a href='gangs.php?action=view&ID=130'><small>[View]</small></a>
+                       </td><td align = left>
+                   5. <a href='gangs.php?action=view&ID=130'><font color = cyan>BT</font></a> <a href='viewuser.php?u=1278'><font color='red'><font color=red>Penfold</font>&nbsp;</font></a><img src='donator.gif 'width='12' height='12' alt='Donator: 260 Days Left' title='Donator: 260 Days Left' />   </td><td>5 secs
+                   </td>
+                   <td>2 hours</td><td><a href=rating.php?change=up&ID=1278><img src=images/positive.gif height='10' width='10'></a> | <a href=rating.php?change=down&ID=1278><img src=images/negative.gif height='10' width='10'></a></td>
+                 <td><small>[<a href='mailbox.php?action=compose&ID=1278'>Mail</a>]</small></td><td><small>N/A</small></td><tr><td>
+                         <small>No Gang</small>
+                       </td><td align = left>
+                   6. <a href='gangs.php?action=view&ID='><font color = cyan></font></a> <a href='viewuser.php?u=1569'><font color='red'><font color=red>Tattooed Knight</font>&nbsp;</font></a><img src='donator.gif 'width='12' height='12' alt='Donator: 759 Days Left' title='Donator: 759 Days Left' /> <img src='images/gym.png 'width='10' height='10' alt='Auto Trainer Active' title='Auto Trainer Active' />  </td><td>22 secs
+                   </td>
+                   <td>1 hours</td><td><a href=rating.php?change=up&ID=1569><img src=images/positive.gif height='10' width='10'></a> | <a href=rating.php?change=down&ID=1569><img src=images/negative.gif height='10' width='10'></a></td>
+                 <td><small>[<a href='mailbox.php?action=compose&ID=1569'>Mail</a>]</small></td><td><small>N/A</small></td><tr><td>
+                         <a href='gangs.php?action=view&ID=87'><small>[View]</small></a>
+                       </td><td align = left>
+                   7. <a href='gangs.php?action=view&ID=87'><font color = cyan>666</font></a> <a href='viewuser.php?u=65'><font color='red'><font color=red>Ghastly Dead Man</font>&nbsp;</font></a><img src='donator.gif 'width='12' height='12' alt='Donator: 732 Days Left' title='Donator: 732 Days Left' />   </td><td>39 secs
+                   </td>
+                   <td>44 mins</td><td><a href=rating.php?change=up&ID=65><img src=images/positive.gif height='10' width='10'></a> | <a href=rating.php?change=down&ID=65><img src=images/negative.gif height='10' width='10'></a></td>
+                 <td><small>[<a href='mailbox.php?action=compose&ID=65'>Mail</a>]</small></td><td><small>N/A</small></td><tr><td>
+                         <small>No Gang</small>
+                       </td><td align = left>
+                   8. <a href='gangs.php?action=view&ID='><font color = cyan></font></a> <a href='viewuser.php?u=1499'><font color='red'><font color=red>Allseeing</font>&nbsp;</font></a><img src='donator.gif 'width='12' height='12' alt='Donator: 1738 Days Left' title='Donator: 1738 Days Left' />   </td><td>1 mins
+                   </td>
+                   <td>1 hours</td><td><a href=rating.php?change=up&ID=1499><img src=images/positive.gif height='10' width='10'></a> | <a href=rating.php?change=down&ID=1499><img src=images/negative.gif height='10' width='10'></a></td>
+                 <td><small>[<a href='mailbox.php?action=compose&ID=1499'>Mail</a>]</small></td><td><small>N/A</small></td><tr><td>
+                         <small>No Gang</small>
+                       </td><td align = left>
+                   9. <a href='gangs.php?action=view&ID='><font color = cyan></font></a> <a href='viewuser.php?u=427'><font color='red'><font color=red>mysticbabe</font>&nbsp;</font></a><img src='donator.gif 'width='12' height='12' alt='Donator: 175 Days Left' title='Donator: 175 Days Left' />   </td><td>1 mins
+                   </td>
+                   <td>2 mins</td><td><a href=rating.php?change=up&ID=427><img src=images/positive.gif height='10' width='10'></a> | <a href=rating.php?change=down&ID=427><img src=images/negative.gif height='10' width='10'></a></td>
+                 <td><small>[<a href='mailbox.php?action=compose&ID=427'>Mail</a>]</small></td><td><small>[<a href='attack.php?ID=427'>Attack</a>]</td><tr><td>
+                         <a href='gangs.php?action=view&ID=87'><small>[View]</small></a>
+                       </td><td align = left>
+                   10. <a href='gangs.php?action=view&ID=87'><font color = cyan>666</font></a> <a href='viewuser.php?u=75'><font color='green'><font color=green>war zone punisher</font>&nbsp;</font></a><img src='donator.gif 'width='12' height='12' alt='Donator: 8684 Days Left' title='Donator: 8684 Days Left' />   <img src='images/staff.gif' width='12' height='12' alt='Staff' title='Staff' /></td><td>5 mins
+                   </td>
+                   <td>2 hours</td><td><a href=rating.php?change=up&ID=75><img src=images/positive.gif height='10' width='10'></a> | <a href=rating.php?change=down&ID=75><img src=images/negative.gif height='10' width='10'></a></td>
+                 <td><small>[<a href='mailbox.php?action=compose&ID=75'>Mail</a>]</small></td><td><small>N/A</small></td></tr>      </table>
+    </td>
+  </tr>
+</table>
+        </div>
+        </div>
+        </div>
+        <!-- End Main Content -->
+        </div>
+      <div id="wrapperB"></div>
+    <br style="clear: both;" />
+  </div>
+</div>
+<div id="footer"><p class="style2">Miscellaneous information - 26 queries | v3.2 | Page loaded in 0.49 seconds</p></div>
+		       </body>
+	       	       </html>
